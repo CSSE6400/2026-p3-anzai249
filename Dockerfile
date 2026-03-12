@@ -21,5 +21,5 @@ COPY todo todo
 EXPOSE 6400
 
 # Running our application 
-CMD ["bash", "-c", "sleep 10 && pipx run poetry run flask --app todo run \ 
+CMD ["pipx", "run", "poetry run flask --app todo run \ 
    --host 0.0.0.0 --port 6400"]
